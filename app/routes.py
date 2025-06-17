@@ -8,6 +8,9 @@ import json
 from dotenv import load_dotenv
 
 load_dotenv()
+@app.route('/')
+def index():
+    return 'TumaSkill WhatsApp bot is running!'
 
 # WhatsApp webhook endpoint
 @app.route("/whatsapp", methods=["POST"])
